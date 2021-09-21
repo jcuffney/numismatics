@@ -57,6 +57,7 @@ Start:
 - what api's exist for this?
     - how do I get lots of images of coins for training
     - how do I get data on a given coin?  would I need to scrape some website to do this?
+- Looks like Apple has a Vision library - and AWS uses Deep Lens for Real time Object Detection
 
 ## Limiting Scope
 
@@ -69,7 +70,9 @@ Start:
 
 ## ML Tasks
 
+Detection:
 - Identify the coins in the image
+Classification:
 - What coin is this? (Coin Identification)
 - Is this the front of the back of the coin?
 - What is the year was this coin minted?
@@ -80,9 +83,12 @@ Start:
 - Github
 - AWS
     - Sagemaker (ML)
+    - Might Potentially use AWS DeepLens ($350)
+    - Rekognition
     - SES (email)
     - Cognito (authentication)
 - Stripe
+
 
 ## Web Scraping Task
 
@@ -102,3 +108,9 @@ Start:
 - cancel a subscription
 - update a subscription
 - create a single order
+
+## Domains
+
+## Resources
+
+- https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&type=segmentation&r=false&c=%2Fm%2F0242l
