@@ -12,6 +12,6 @@ The project is segmented into it's core components but all living within a mono-
 
 - `/docs` - Documentation about the broader project
 - `/ml` - Models / Infra for identification and other ML tasks
-- `/website` - The Website Client
+- `/web` - The Website Client
 - `/app` - The App Client (not clear if react native or not yet)
 - `/api` - The App / Website's API
