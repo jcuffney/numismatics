@@ -1,0 +1,8 @@
+
+type User @key(fields: "id") {
+    id: ID!
+}
+
+type Query {
+    whoami: User
+}

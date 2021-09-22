@@ -1,0 +1,20 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "node ./src/index.js"
+  },
+  "author": "Joe Cuffney <josephcuffney@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/federation": "^0.32.0",
+    "apollo-server": "^3.3.0",
+    "graphql": "^15.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,0 +1,8 @@
+subgraphs:
+  user:
+    # used at runtime
+    routing_url: http://user-service:4001/graphql
+    schema:
+      # used at composition (build) time
+      # subgraph_url: http://user-service:4001/graphql
+      file: ../../user-service/src/schema.graphql

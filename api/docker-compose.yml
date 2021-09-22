@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+
+  gateway-service:
+    image: node:latest
+    user: node
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./gateway-service:/home/node/app
+    ports:
+      - 4000:4000
+    command: npm start 
+    depends_on:
+      - user-service
+    # networks:
+    #   - development
+
+  user-service:
+    image: node:latest
+    user: node
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./user-service:/home/node/app
+    expose:
+      - 4001
+    ports:
+      - 4001:4001
+    command: npm run dev
+    # networks:
+    #   - development
+
+# inter-container networking
+# networks: 
+#   development:
